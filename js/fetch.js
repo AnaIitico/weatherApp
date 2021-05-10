@@ -8,7 +8,7 @@ form.addEventListener("submit", e => {
     e.preventDefault();
     city = input.value;
     city = city.toUpperCase();
-    url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKEY}`;
+    url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKEY}`;
     // console.log(`This is City in Submit: ${city}`);
     // console.log(`This is URL in Submit: ${url}`);
     displayWeather();
